@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+body {
+    background: rgba(70, 60, 60, 0.137);
+}
+
+#text-bg {
+    margin-top: 20px;
+}
+
+.alignment {
+    margin-top: 20px;
+}
+
+#alignment {
+    width: 35%;
+    box-shadow: 5px 5px 2px grey;
+    border-radius: 0px;
+}
+
+
+/*menu part start*/
+
+.navbar ul li a {
+    color: #090114;
+    font-size: 20px;
+    transition: 0.3s;
+    border-radius: 1px;
+}
+
+.nav-item button {
+    background-color: rgb(212, 154, 154);
+    color: black;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    background-color: rgb(223, 94, 94);
+    font-size: 20px;
+    border-radius: 1px;
+}
+
+
+/*menu part end*/
+
+.great-deal-box {
+    margin-top: 30px;
+}
+
+.great-deal-item {
+    height: 420px;
+    width: 350px;
+    border: 0px solid #ddd;
+    box-shadow: 10px 10px 5px rgb(212, 154, 154);
+    background-image: url('../img/gr1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.sell-text {
+    background: #fd3c3c;
+    color: white;
+    width: 54%;
+    height: 90%;
+    padding: 3px;
+}
+
+.price-text {
+    background: #fd3c3c;
+    color: white;
+    margin-top: 40px;
+    width: 89%;
+    height: 9%;
+    padding: 6px;
+}
+
+.price-text:hover {
+    color: white !important;
+}
+
+.price-loaction {
+    margin-top: 130px;
+    background: #72717180;
+    color: white;
+    padding: 0px 10px 0px 5px;
+}
+
+.txt-color {
+    color: white;
+}
+
+
+/* List of available items*/
+
+.center-bg {
+    background: #FD3C3C;
+    color: white;
+    text-align: center;
+}
+
+.background {
+    background: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: white;
+    border: 2px solid;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.btn-secondary:focus {
+    background-color: transparent !important;
+    border-color: white !important;
+}
+
+hr {
+    background: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid;
+}
+
+
+/* The container */
+
+.radios {
+    margin-left: 20%;
+    text-align: justify;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #2b26263b;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #2b26263b;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.button {
+    border: none;
+    color: rgb(7, 7, 7);
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20%;
+    background-color: #f7f5f5;
+}
+
+.dropdown-btn {
+    width: 60%;
+    padding: 15px 0 15px 0;
+    color: black !important;
+    background-color: #f7f5f5;
+    border: none;
+    border-radius: 0%;
+}
+
+.dropdown-btn:hover {
+    width: 60%;
+    padding: 15px 0 15px 0;
+    background-color: #ffffff !important;
+    border: none;
+    border-radius: 0%;
+}
+
+.bg-all-butn {
+    border: 2px solid white;
+}
+
+.bg-all-butn:hover {
+    border: 2px solid white;
+    background: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    border-color: none;
+}
+
+.b-r-btn:not(:disabled):not(.disabled) {
+    margin-top: 5px !important;
+    background-color: rgb(223, 94, 94);
+}
+
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.drop-down-area {
+    margin-top: 20px;
+    top: 56%;
+}
+
+.dropdown-menu {
+    width: 250px;
+    background: rgb(255, 255, 255);
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(223, 94, 94);
+    color: white;
+}
+
+.active,
+.btn:hover {
+    background-color: rgb(133, 131, 131);
+
+}
+
+
+/* Footer */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.footer-distributed {
+    background-color: #000000;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+.footer-distributed h3 {
+    color: #f87474;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #f5e4e4;
+}
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #3c8ef8;
+    color: #f6daed;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #ffffff;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    position: relative;
+    margin: 0;
+}
+
+.form-group:before,
+.form-group:after {
+    content: '';
+    display: table;
+}
+
+.form-group:after {
+    clear: both;
+}
+
+.form-group input {
+    border: 1px solid #00bff3;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 50px;
+    padding: 0 30px;
+    margin: 0 5px;
+    border-radius: 0 !important;
+}
+
+.form-group button {
+    height: 50px;
+    position: relative;
+    width: 80px;
+    padding: 0
+}
+
+button.btn.btn-motive {
+    background: #F44336;
+    border: #FF5722;
+    color: white;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
+}
