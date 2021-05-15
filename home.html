@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- g-font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <!-- font-awsm -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<body>
+
+    <!-- nav-bar -->
+    <div class="top-area">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <!-- logo -->
+                <a class="navbar-brand" href="home.html"><img src="img/yt1.png" width="65" height="43"
+                        class="d-inline-block align-top" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link p-2" href="home.html"> Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <!-- Desktop view here-->
+                        <li class="nav-item dropdown d-none d-sm-block d-lg-none d-xl-block">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Brokerage
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="buy.html">Buy</a>
+                                <a class="dropdown-item" href="rent.html">Rent</a>
+                                <a class="dropdown-item" href="sell.html">Sell</a>
+                            </div>
+                        </li> 
+                        <!-- Mobile view here-->
+                        <div class="dropdown-two d-block d-sm-none">
+                            <li class="nav-item">
+                                <a class="nav-link p-2" href="buy.html">Buy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2" href="rent.html">Rent</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2" href="sell.html">Sell</a>
+                            </li>
+                        </div> 
+                        <!-- Mobile view ends here-->
+                        
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#"> Alert <i class="fa fa-bell"></i></a>
+                        </li>
+                        <li class="nav-item p-1 ">
+                            <a href="login.html"><button type="button" class="btn btn-danger p-2">Login <i
+                                        class="fa fa-user-circle-o"></i></button></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- navbar -->
+
+    <!-- slider-area -->
+    <div class="container-fluid" style="padding-top: 50px;">
+        <div class="row">
+            <div class="">
+                <!-- slider -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img style=" opacity: 80%;" class="d-block w-100 sliders-vh" src="img/home1.jpg"
+                                alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img style=" opacity: 80%;" class="d-block w-100 sliders-vh" src="img/home2.jpg"
+                                alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img style=" opacity: 80%;" class="d-block w-100 sliders-vh" src="img/home3.jpg"
+                                alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+                <!-- slider-controller-left-right -->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!-- slider-controller-left-right -->
+            </div>
+            <!-- slider -->
+
+            <!-- welcome-text -->
+            <div class="welcome-text position-absolute text-center d-none d-sm-block d-lg-none d-xl-block">
+                <div class="col-12">
+                    <h1 class="ml14">
+                        <span class="text-wrapper">
+                            <span class=""></span>
+                            <span style="background-color: rgba(255, 255, 255, 0.801);" class="letters"> Best way to Buy
+                                & Sell </span>
+                            <span class="line"></span>
+                        </span>
+                    </h1>
+                </div>
+            </div>
+            <!-- mobile view-->
+            <div class="welcome-text position-absolute text-center d-block d-sm-none">
+                <div class="col-12">
+                    <h1 style="background-color: rgba(255, 255, 255, 0.801); color: black;"> Best way to Buy & Sell
+                    </h1>
+                </div>
+            </div>
+
+            <!-- welcome-text ends here-->
+
+            <!-- Buy & Rent Button -->
+            <!--
+            <div class="buy-rent-btn position-absolute text-center">
+                <div class="col-12">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary">
+                            <input class="BRbutton" type="radio" name="options" id="option1" checked> <a href="buy.html">Buy</a>
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input class="BRbutton" type="radio" name="options" id="option2"> <a href="rent.html">Rent</a> </label>
+                        <label class="btn btn-secondary" >
+                            <input class="BRbutton" type="radio" name="options" id="option3"> <a href="sell.html">Sell</a>
+                        </label>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Buy & Rent Button -->
+
+            <!-- drop-down-area -->
+            <div class="drop-down-area position-absolute text-center d-flex justify-content-center">
+                <div class="col-12">
+
+                    <div class="dropdown d-none d-sm-block d-lg-none d-xl-block">
+                        <a class="btn btn-secondary dropdown-toggle dropdown-btn" href="#" role="button"
+                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>Dhaka</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Chittagong</a>
+                            <a class="dropdown-item" href="#">Mymensingh</a>
+                            <a class="dropdown-item" href="#">Khulna</a>
+                        </div>
+                    </div>
+                    <div class="dropdown d-none d-sm-block d-lg-none d-xl-block">
+                        <a class="btn btn-secondary dropdown-toggle dropdown-btn" href="#" role="button"
+                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>Bashundhara</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Uttara</a>
+                            <a class="dropdown-item" href="#">Badda</a>
+                            <a class="dropdown-item" href="#">Gulshan</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-block d-lg-none d-xl-block">
+                        <div class="search-icon position-absolute">
+                            <a class="" href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <!--Mobile search-->
+
+                    <div class="dropdown-two d-block d-sm-none">
+                        <a class="btn btn-secondary dropdown-toggle dropdown-btn" href="#" role="button"
+                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dhaka
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Chittagong</a>
+                            <a class="dropdown-item" href="#">Mymensingh</a>
+                            <a class="dropdown-item" href="#">Khulna</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-two d-block d-sm-none">
+                        <a class="btn btn-secondary dropdown-toggle dropdown-btn" href="#" role="button"
+                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Bashundhara
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Uttara</a>
+                            <a class="dropdown-item" href="#">Badda</a>
+                            <a class="dropdown-item" href="#">Gulshan</a>
+                        </div>
+                    </div>
+
+                    <div class="d-block d-sm-none">
+                        <div class="d-flex justify-content-center">
+                            <div class="search-icon-two position-absolute">
+                                <a class="" href="#"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- drop-down-area -->
+        </div>
+    </div>
+    <!-- slider-area -->
+
+    <!-- great-deals start-->
+    <div class="contatent">
+        <div class="container">
+            <div class="row">
+                <!-- great-deals-text -->
+                <div class="great-deals-text m-auto">
+                    <div style="padding-top: 80px;" class="col-sm-12">
+                        <h2 style="text-transform: uppercase; padding-bottom: 30px; font-weight: 600; font-size: 45px;">
+                            great deals</h2>
+                    </div>
+                </div>
+                <!--  great-deals-text -->
+            </div>
+
+            <!-- great-deal-box -->
+            <div class="great-deal-box">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="property.html">
+                            <div class="great-deal-item">
+
+                                <div class="row" style="padding: 0px 10px 0px 10px;">
+                                    <span class="col d-inline-block text-left txt-color">
+                                        <h4 class="sell-text text-center"> Sell </h4>
+                                    </span>
+
+                                    <span class="col d-inline-block text-right txt-color">
+                                        <i class="fa fa-heart"></i>
+                                    </span>
+                                </div>
+                                <div class="price-loaction">
+                                    <div class="col">
+                                        <div class="d-flex justify-content-center d-block">
+                                            <span style="font-weight: bold;" class="text-center txt-color"> 4000 Sq FT
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- <div class="col d-flex justify-content-center"><a href="#"><span class="fa fa-map">
+                                                    Bashundharaa</span> </a></div> -->
+                                        <span class="col d-inline-block text-right txt-color">
+                                            4 Bath
+                                            <img height="20px" width="20px" src="img/bath.svg">
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="row ">
+                                        <span class="col d-inline-block text-left txt-color">
+                                            <img height="20px" width="20px" src="img/location.svg">
+                                            Bashundhara
+
+                                        </span>
+                                        <span class="col d-inline-block text-right txt-color">
+                                            4 Bed
+                                            <img height="20px" width="20px" src="img/bed.svg">
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="row ">
+                                        <!-- <div class="col d-flex justify-content-center"><a href="#"><span class="fa fa-map">
+                                                    Bashundura</span> </a></div> -->
+                                        <span class="col d-inline-block text-right txt-color">
+                                            6th Floor
+                                            <img height="20px" width="20px" src="img/floor.svg">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex justify-content-center d-block">
+                                        <div class="price-text" href="#">
+                                            <h5 class=" text-center">2,50,00,000 BDT</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="property.html">
+                            <div class="great-deal-item">
+                                <div class="row" style="padding: 0px 10px 0px 10px;">
+                                    <span class="col d-inline-block text-left txt-color">
+                                        <h4 class="sell-text text-center"> Sell </h4>
+                                    </span>
+
+                                    <span class="col d-inline-block text-right txt-color">
+                                        <i class="fa fa-heart"></i>
+                                    </span>
+                                </div>
+                                <div class="price-loaction">
+                                    <div class="col">
+                                        <div class="d-flex justify-content-center d-block">
+                                            <span style="font-weight: bold;" class="text-center txt-color"> 4000 Sq FT
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- <div class="col d-flex justify-content-center"><a href="#"><span class="fa fa-map">
+                                                    Bashundura</span> </a></div> -->
+                                        <span class="col d-inline-block text-right txt-color">
+                                            4 Bath
+                                            <img height="20px" width="20px" src="img/bath.svg">
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="row ">
+                                        <span class="col d-inline-block text-left txt-color">
+                                            <img height="20px" width="20px" src="img/location.svg">
+                                            Bashundhara
+
+                                        </span>
+                                        <span class="col d-inline-block text-right txt-color">
+                                            4 Bed
+                                            <img height="20px" width="20px" src="img/bed.svg">
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="row ">
+                                        <!-- <div class="col d-flex justify-content-center"><a href="#"><span class="fa fa-map">
+                                                    Bashundura</span> </a></div> -->
+                                        <span class="col d-inline-block text-right txt-color">
+                                            6th Floor
+                                            <img height="20px" width="20px" src="img/floor.svg">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex justify-content-center d-block">
+                                        <div class="price-text" href="#">
+                                            <h5 class=" text-center">2,50,00,000 BDT</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="property.html">
+                            <div class="great-deal-item">
+                                <div class="row " style="padding: 0px 10px 0px 10px;">
+                                    <span class="col d-inline-block text-left txt-color">
+                                        <h4 class="sell-text text-center"> Sell </h4>
+                                    </span>
+
+                                    <span class="col d-inline-block text-right txt-color">
+                                        <i class="fa fa-heart"></i>
+                                    </span>
+                                </div>
+                                <div class="price-loaction">
+                                    <div class="col">
+                                        <div class="d-flex justify-content-center d-block">
+                                            <span style="font-weight: bold;" class="text-center txt-color"> 4000 Sq FT
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- <div class="col d-flex justify-content-center"><a href="#"><span class="fa fa-map">
+												Bashundura</span> </a></div> -->
+                                        <span class="col d-inline-block text-right txt-color">
+                                            4 Bath
+                                            <img height="20px" width="20px" src="img/bath.svg">
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="row ">
+                                        <span class="col d-inline-block text-left txt-color">
+                                            <img height="20px" width="20px" src="img/location.svg">
+                                            Bashundhara
+
+                                        </span>
+                                        <span class="col d-inline-block text-right txt-color">
+                                            4 Bed
+                                            <img height="20px" width="20px" src="img/bed.svg">
+                                        </span>
+                                    </div>
+                                    <br>
+                                    <div class="row ">
+                                        <!-- <div class="col d-flex justify-content-center"><a href="#"><span class="fa fa-map">
+												Bashundura</span> </a></div> -->
+                                        <span class="col d-inline-block text-right txt-color">
+                                            6th Floor
+                                            <img height="20px" width="20px" src="img/floor.svg">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex justify-content-center d-block">
+                                        <div class="price-text" href="#">
+                                            <h5 class=" text-center">2,50,00,000 BDT</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- great-deal-box -->
+    </div>
+    <!-- great-deals end-->
+
+    <!-- how-it-works start-->
+
+    <div style="background-color: rgb(231, 231, 231); padding-bottom: 30px; padding-top: 146px; ">
+        <div class="container">
+            <div class="row">
+                <!-- how-it-works-text -->
+                <div class="great-deals-text m-auto">
+                    <div style="padding-bottom: 30px;" class="col-sm-12">
+                        <h2 style="text-transform: uppercase; padding-bottom: 30px; font-weight: 600; font-size: 45px;">
+                            How it works</h2>
+                    </div>
+                </div>
+                <!--  how-it-works-text -->
+            </div>
+        </div>
+
+
+        <!-- how-it-works-box -->
+
+        <div class="container">
+            <div class="great-deal-box">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <div class="great-deal-item-2">
+                                <div class="col">
+                                    <!--previous partan // for top margin-->
+                                </div>
+
+                                <div class="col">
+                                    <div class="d-flex justify-content-center">
+                                        <img class="center" height="160px" width="185px" src="img/BuyCard.svg" alt="">
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Aut, veritatis?</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center d-block">
+                                        <div class="price-text-two">
+                                            <h5 class=" text-center"> Buy</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#">
+                            <div class="great-deal-item-3">
+                                <div class="col">
+                                    <!--previous partan // for top margin-->
+                                </div>
+
+                                <div class="col">
+                                    <div class="d-flex justify-content-center">
+                                        <img class="center" height="160px" width="185px" src="img/SellCard.svg" alt="">
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Aut, veritatis?</p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center d-block">
+                                        <div class="price-text-two">
+                                            <h5 class=" text-center"> Sell</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+
+                        <a href="#">
+                            <div class="great-deal-item-4">
+                                <div class="col">
+                                    <!--previous partan // for top margin-->
+                                </div>
+
+                                <div class="col">
+                                    <div class="d-flex justify-content-center">
+                                        <img class="center" height="160px" width="185px" src="img/RentCard.svg" alt="">
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Aut, veritatis?</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center d-block">
+                                        <div class="price-text-two">
+                                            <h5 class=" text-center"> Rent</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- how-it-works-box -->
+
+    <!-- how-it-works end-->
+
+    <!-- Footer -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>482<span>Project</span></h3>
+            <p class="footer-links">
+                <a href="home.html">Home </a> |
+                <a href="about.html">About Us </a> |
+                <a href="#">Terms & Privacy Policy </a>
+            </p>
+            <div class="inner">
+                <div class="form-group">
+                    <input name="formfields[nl_email]" id="nl_email" class="validate[required]"
+                        placeholder="Enter your email address" type="text" value=""> <label for="nl_email"
+                        class="sr-only">Email Address</label> <button type="submit"
+                        class="btn btn-motive">Subscribe</button>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>North South University, Dhaka, Bangladesh</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+8801*********</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">xyz@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span> About 482 Project </span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
+                voluptatibus.
+            </p>
+            <div class="footer-icons">
+                <a style="background-color: #1873eb;" href="#"><i class="fa fa-facebook"></i></a>
+                <a style="background-color: #e76183;" href="#"><i class="fa fa-instagram"></i></a>
+                <a style="background-color: #fe0000;" href="#"><i class="fa fa-youtube-play"></i></a>
+                <a style="background-color: #0077b5;" href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+        <hr style="background-color: aqua;">
+        <p style="display: flex; justify-content: center;" class="footer-company-name">482 Project &copy; 2021
+        </p>
+    </footer>
+    <!-- Footer -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <!-- popper-js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap-js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- main-js -->
+    <script src="js/homepage.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // var textWrapper = document.querySelector('.ml11 .letters');
+        // textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+        // anime.timeline({
+        //         loop: true
+        //     })
+        //     .add({
+        //         targets: '.ml11 .line',
+        //         scaleY: [0, 1],
+        //         opacity: [0.5, 1],
+        //         easing: "easeOutExpo",
+        //         duration: 700
+        //     })
+        //     .add({
+        //         targets: '.ml11 .line',
+        //         translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+        //         easing: "easeOutExpo",
+        //         duration: 700,
+        //         delay: 100
+        //     }).add({
+        //         targets: '.ml11 .letter',
+        //         opacity: [0, 1],
+        //         easing: "easeOutExpo",
+        //         duration: 600,
+        //         offset: '-=775',
+        //         delay: (el, i) => 34 * (i + 1)
+        //     }).add({
+        //         targets: '.ml11',
+        //         opacity: 0,
+        //         duration: 1000,
+        //         easing: "easeOutExpo",
+        //         delay: 1000
+        //     });
+
+
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml14 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({
+                loop: true
+            })
+            .add({
+                targets: '.ml14 .line',
+                scaleX: [0, 1],
+                opacity: [0.5, 1],
+                easing: "easeInOutExpo",
+                duration: 900
+            }).add({
+                targets: '.ml14 .letter',
+                opacity: [0, 1],
+                translateX: [40, 0],
+                translateZ: 0,
+                scaleX: [0.3, 1],
+                easing: "easeOutExpo",
+                duration: 800,
+                offset: '-=600',
+                delay: (el, i) => 150 + 25 * i
+            }).add({
+                targets: '.ml14',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+
+        //typing effects-
+    </script>
+</body>
+
+</html>
+
+
